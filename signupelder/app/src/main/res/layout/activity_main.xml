@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="16dp"
+    android:paddingTop="16dp"
+    android:paddingEnd="16dp"
+    android:paddingBottom="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textAppName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enhanced Aging"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"/>
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/en_logo18"
+        android:layout_below="@id/textAppName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+
+    <Button
+        android:id="@+id/btnConnectWithUs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_button"
+        android:onClick="connectWithUs"
+        android:text="Connect with Us"/>
+
+    <!-- Vertical LinearLayout for Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnConnectWithUs"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnSignUpElder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:onClick="navigateToRegistrationActivity"
+            android:text="Sign Up as Elder" />
+
+        <Button
+            android:id="@+id/btnSignUpFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:onClick="navigateToSignUpFamily"
+            android:layout_marginTop="16dp"
+            android:text="Sign Up as Family"/>
+
+        <Button
+            android:id="@+id/btnLoginElder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:onClick="navigateToLoginElder"
+            android:layout_marginTop="16dp"
+            android:text="Login as Elder"/>
+
+        <Button
+            android:id="@+id/btnLoginFamily"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rounded_button"
+            android:onClick="navigateToLoginFamily"
+            android:layout_marginTop="16dp"
+            android:text="Login as Family"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="editTextAge" type="id" />
+    <item name="editTextUsername" type="id" />
+    <item name="editTextPassword" type="id" />
+    <item name="editTextConfirmPassword" type="id" />
+    <item name="editTextAadharNumber" type="id" />
+    <item name="radioGroupGender" type="id" />
+    <item name="radioButtonMale" type="id" />
+    <item name="radioButtonFemale" type="id" />
+</resources>

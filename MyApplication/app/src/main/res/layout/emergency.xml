@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="#121111"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme" />
+
+        <TextView
+            android:id="@+id/toolbarHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp"
+            android:text="Emergency Response system"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:textStyle="bold"/>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/toolbarHeader"
+            android:text="Emergency Response System"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="start"
+            tools:ignore="NotSibling" />
+
+        <Button
+            android:id="@+id/emergencyButton"
+            android:layout_width="188dp"
+            android:layout_height="147dp"
+            android:layout_below="@id/titleTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="106dp"
+            android:layout_marginEnd="97dp"
+            android:padding="20dp"
+            android:text="Fall Detection"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewBelowEmergencyButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="dvabcvuac"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/emergencyButton1"
+            android:layout_width="191dp"
+            android:layout_height="157dp"
+            android:layout_below="@id/textViewBelowEmergencyButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="129dp"
+            android:padding="20dp"
+            android:text="Routine Analysis"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textViewBelowEmergencyButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emergencyButton1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="hcqwbjc"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

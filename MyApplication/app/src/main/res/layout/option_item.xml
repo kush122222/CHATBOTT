@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="31dp"
+    app:cardBackgroundColor="#AEA2AE"
+    tools:context=".OptionItem">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/idoption"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:scaleType="centerCrop"/>
+
+        <TextView
+            android:id="@+id/idheading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idoption"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="-224dp"
+            android:layout_marginEnd="9dp"
+            android:layout_marginRight="9dp"
+            android:gravity="top|start"
+            android:padding="4dp"
+            android:text="OPTIONS"
+            android:textColor="#0E0E0E"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idheading"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:padding="8dp">
+            <GridLayout
+                android:id="@+id/idGridLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/idheading"
+                android:columnCount="4"
+                android:rowCount="2"
+                android:layout_marginTop="8dp"
+                android:padding="8dp">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/rounded_button"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/button1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Button 1"/>
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:background="@drawable/rounded_button"
+                    android:layout_rowWeight="1"
+                    android:id="@+id/button2"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Button 2"/>
+
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginEnd="18dp"
+                    android:layout_marginRight="8dp"
+                    android:id="@+id/button3"
+                    android:background="@drawable/rounded_button"
+                    android:text="Button 3"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_columnWeight="1"
+                    android:id="@+id/button4"
+                    android:background="@drawable/rounded_button"
+                    android:layout_rowWeight="1"
+                    android:text="Button 4"/>
+
+
+
+            </GridLayout>
+
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

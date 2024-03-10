@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="#121111"
+            android:background="?attr/colorPrimary"
+            android:theme="?attr/actionBarTheme" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="Emergency Response System"
+            android:textSize="24sp"
+            android:gravity="start"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/emergencyButton"
+            android:layout_width="188dp"
+            android:layout_height="147dp"
+            android:layout_below="@id/titleTextView"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="36dp"
+            android:layout_marginEnd="97dp"
+            android:padding="20dp"
+            android:text="Tracking Vitals"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonBelowEmergency1"
+            android:layout_width="188dp"
+            android:layout_height="147dp"
+            android:layout_below="@id/emergencyButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="20dp"
+            android:text="Emergency Respondse"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/emergencyButton1"
+            android:layout_width="188dp"
+            android:layout_height="147dp"
+            android:layout_below="@id/buttonBelowEmergency1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="97dp"
+            android:padding="20dp"
+            android:text="Medication Managment"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/buttonBelowEmergency2"
+            android:layout_width="188dp"
+            android:layout_height="147dp"
+            android:layout_below="@id/emergencyButton1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:padding="20dp"
+            android:text="Scan Messages"
+            android:textSize="18sp" />
+
+    </RelativeLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
